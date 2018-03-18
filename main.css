@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins";
+  margin: 0;
+}
+
+.row {
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+
+.row::after {
+  clear: both;
+}
+
+.col-3, .col-4, .col-6, .col-12 {
+  float: left;
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+}
+
+/* Mobile defaults */
+.col-3, .col-4, .col-6, .col-12 {
+  width: 100%;
+}
+
+/* Non-mobile, grid */
+@media only screen and (min-width: 640px) {
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.333333%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgb(208, 209, 211);
+}
+
+.logo {
+  width: 45px;
+  padding-left: 10px;
+  position: relative;
+  top: 6px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.site-links {
+  float: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.link {
+  padding-right: 10px;
+  font-size: 14pt;
+}
+
+.site-links a {
+  color: black;
+  text-decoration: none;
+}
+
+.site-links a:hover {
+  cursor: pointer;
+  color: purple;
+}
+
+#home {
+    background: url("https://i.imgur.com/BXbOrxz.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 300px;
+  padding-bottom: 100px;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 50pt;
+  margin: 0;
+  position: relative;
+  bottom: 140px;
+  color: white;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 35pt;
+  margin: 0;
+  position: relative;
+  bottom: 40px;
+  color: white;
+}
+
+.main-title, .subtitle {
+  font-family: "Ubuntu";
+}
+
+.bio-page {
+  text-align: center;
+  background-color: rgb(245, 221, 169);
+  padding-bottom: 50px;
+}
+
+.bio-title {
+  font-family: "Ubuntu";
+  font-size: 24pt;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.profile-photo {
+  margin-top: 20px;
+  width: 20%;
+  border-radius: 2px;
+}
+
+.contact-info {
+  padding-top: 20px;
+}
+
+.contact-info h2 {
+  font-family: "Ubuntu";
+  margin-top: 10px;
+  font-size: 16pt;
+}
+
+.bio-paragraphs {
+  padding-top: 60px;
+  width: 70%;
+  position: relative;
+  left: 15%;
+  font-size: 16pt;
+}
+
+.portfolio-page {
+  text-align: center;
+  background-color: rgb(245, 221, 169);
+  padding-bottom: 1500px;
+}
+
+#top-section, #bottom-section {
+  padding-top: 50px;
+}
+
+.portfolio-img {
+  width: 400px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+.project-links {
+  margin-bottom: 10px;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: rgb(0, 131, 238);
+  padding: 0px 5px 0px 5px;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(99, 2, 255)
+}
+
+footer p {
+  color: white;
+  padding-right: 5px;
+  font-size: 12pt;
+  display: inline-block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+footer a {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+}
+
+footer a img {
+  width: 20px;
+}
